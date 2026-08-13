@@ -1,30 +1,41 @@
 /* ==========================================================================
-   DDL GROUP LANDING PAGE - INTERACTIVE UI & API INTEGRATION
+   DIGITAL DESIGN LEADERSHIP GROUP (DDL GROUP)
+   INTERACTIVE LIGHT MODE UI & API INTEGRATION
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. Sticky Navbar & Mobile Toggle ---
-    const navbar = document.getElementById('navbar');
+    // --- 1. Full Screen Mobile Overlay Menu Toggle ---
     const mobileToggle = document.getElementById('mobile-toggle');
-    const navLinks = document.getElementById('nav-links');
+    const mobileClose = document.getElementById('mobile-close');
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 40) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+    function openMobileMenu() {
+        if (mobileMenuOverlay) {
+            mobileMenuOverlay.classList.add('active');
+            document.body.classList.add('menu-open');
         }
-    });
+    }
 
-    if (mobileToggle && navLinks) {
-        mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+    function closeMobileMenu() {
+        if (mobileMenuOverlay) {
+            mobileMenuOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+    }
 
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', openMobileMenu);
+    }
+
+    if (mobileClose) {
+        mobileClose.addEventListener('click', closeMobileMenu);
+    }
+
+    if (mobileMenuOverlay) {
+        mobileMenuOverlay.querySelectorAll('a, .mobile-nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                closeMobileMenu();
             });
         });
     }
@@ -50,9 +61,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 3. Auto-Select Service from Buttons & Smooth Scroll ---
-    const selectButtons = document.querySelectorAll('.select-service-btn');
+    // --- 3. Dynamic "Other Service Request" Toggle ---
     const serviceSelectDropdown = document.getElementById('service');
+    const customServiceGroup = document.getElementById('customServiceGroup');
+    const customServiceInput = document.getElementById('customServiceInput');
+
+    if (serviceSelectDropdown && customServiceGroup) {
+        serviceSelectDropdown.addEventListener('change', () => {
+            if (serviceSelectDropdown.value === 'Other Service Request') {
+                customServiceGroup.classList.remove('hidden');
+                if (customServiceInput) customServiceInput.required = true;
+            } else {
+                customServiceGroup.classList.add('hidden');
+                if (customServiceInput) customServiceInput.required = false;
+            }
+        });
+    }
+
+    // --- 4. Auto-Select Service from Buttons & Smooth Scroll ---
+    const selectButtons = document.querySelectorAll('.select-service-btn');
     const contactSection = document.getElementById('contact');
 
     selectButtons.forEach(button => {
@@ -71,6 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!matched) {
                     serviceSelectDropdown.value = serviceSelectDropdown.options[1].value;
                 }
+
+                // Trigger change event to hide custom field if not 'Other'
+                serviceSelectDropdown.dispatchEvent(new Event('change'));
             }
 
             if (contactSection) {
@@ -79,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 4. Form Submission (Azure Function / Fallback API) ---
+    // --- 5. Form Submission (Azure Function / Fallback API) ---
     const leadForm = document.getElementById('leadForm');
     const submitBtn = document.getElementById('submitBtn');
     const btnText = submitBtn ? submitBtn.querySelector('.btn-text') : null;
@@ -93,11 +123,16 @@ document.addEventListener('DOMContentLoaded', () => {
             formStatus.className = 'form-status-alert hidden';
             formStatus.textContent = '';
 
+            let chosenService = serviceSelectDropdown.value;
+            if (chosenService === 'Other Service Request' && customServiceInput) {
+                chosenService = `Other: ${customServiceInput.value.trim()}`;
+            }
+
             const formData = {
                 fullName: document.getElementById('fullName').value.trim(),
                 phone: document.getElementById('phone').value.trim(),
                 email: document.getElementById('email').value.trim(),
-                service: document.getElementById('service').value,
+                service: chosenService,
                 message: document.getElementById('message').value.trim(),
                 timestamp: new Date().toISOString()
             };
@@ -126,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (response.success || response.status === 'success') {
                     showStatus('🎉 Thank you! Your request has been submitted. A WhatsApp notification & confirmation auto-reply has been sent to your phone!', 'success');
                     leadForm.reset();
+                    if (customServiceGroup) customServiceGroup.classList.add('hidden');
                 } else {
                     showStatus(response.message || 'Error submitting request. Please try again or call 7551067843.', 'error');
                 }
@@ -137,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (fallbackResult.success) {
                         showStatus('🎉 Request submitted successfully! WhatsApp notification sent.', 'success');
                         leadForm.reset();
+                        if (customServiceGroup) customServiceGroup.classList.add('hidden');
                     } else {
                         showStatus('Unable to process automatically. Please call us directly at 7551067843.', 'error');
                     }

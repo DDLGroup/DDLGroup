@@ -1,0 +1,23 @@
+# robots.txt for DDL Group (Digital Design Leadership Group)
+User-agent: *
+Allow: /
+
+# AI & LLM Search Engine Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap & LLM Context File
+Sitemap: https://ddlgroup.ddlg.in/sitemap.xml
+LLMS-Txt: https://ddlgroup.ddlg.in/llms.txt
