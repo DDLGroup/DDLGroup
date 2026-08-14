@@ -11,7 +11,7 @@
     <meta name="keywords" content="DDL Group, DDL Group services, Digital Design Leadership Group, ddlg.in, ddlgroup.ddlg.in, best web design company in West Bengal, website at 1499, billing software 1999, bulk mail service, hisab nikas, myschoolmanager 499, panchayatexam 9999, casevault 4999, rfid attendance 4999, ai chatbot automation 1999, school erp software, web development Bolpur Santiniketan Birbhum">
     <meta name="author" content="Digital Design Leadership Group (DDL Group)">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="theme-color" content="#2563eb">
+    <meta name="theme-color" content="#1d4ed8">
     
     <!-- GEOGRAPHIC & LOCAL SEO TAGS (West Bengal & India) -->
     <meta name="geo.region" content="IN-WB">
@@ -42,16 +42,24 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" href="favicon.png">
 
-    <!-- GOOGLE FONTS: Inter & Plus Jakarta Sans -->
+    <!-- PERFORMANCE OPTIMIZED ASSET PRELOADS -->
+    <link rel="preload" href="logo.webp" as="image" type="image/webp">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ASYNCHRONOUS GOOGLE FONTS PRECONNECT & LOAD -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- FONTAWESOME 6 ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+    </noscript>
+
+    <!-- ASYNCHRONOUS FONTAWESOME 6 ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
 
     <!-- COMPREHENSIVE STRUCTURED DATA SCHEMA (JSON-LD) -->
     <script type="application/ld+json">
@@ -304,14 +312,14 @@
     <div class="top-announcement-bar">
         <div class="container top-announce-flex">
             <div class="announce-left">
-                <span class="badge-tag-sm"><i class="fa-solid fa-bolt"></i> DDL GROUP</span>
+                <span class="badge-tag-sm"><i class="fa-solid fa-bolt" aria-hidden="true"></i> DDL GROUP</span>
                 <span class="announce-text">Official Digital Services & Software Directory • Est. 2017</span>
             </div>
             <div class="announce-right">
-                <span class="reg-tag"><i class="fa-solid fa-certificate"></i> Reg: <strong>UDYAM-WB-04-0009815</strong></span>
-                <a href="tel:7551067843"><i class="fa-solid fa-phone"></i> 7551067843</a>
-                <a href="https://ddlg.in" rel="dofollow" target="_blank" class="main-site-btn" title="Main Agency Site">
-                    ddlg.in <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span class="reg-tag"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Reg: <strong>UDYAM-WB-04-0009815</strong></span>
+                <a href="tel:7551067843" aria-label="Call DDL Group at 7551067843"><i class="fa-solid fa-phone" aria-hidden="true"></i> 7551067843</a>
+                <a href="https://ddlg.in" rel="dofollow" target="_blank" class="main-site-btn" title="Main Agency Site" aria-label="Visit Main Agency Website ddlg.in">
+                    ddlg.in <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -320,8 +328,11 @@
     <!-- NAVIGATION HEADER -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#services" class="brand-logo" title="DDL Group Services Catalog">
-                <img src="logo.png" alt="DDL Group Logo" class="logo-img" onerror="this.onerror=null; this.src='ddlg logo.jpg';">
+            <a href="#services" class="brand-logo" title="DDL Group Services Catalog" aria-label="DDL Group Services Catalog Home">
+                <picture>
+                    <source srcset="logo.webp" type="image/webp">
+                    <img src="logo.png" alt="DDL Group Logo" width="42" height="42" class="logo-img" decoding="async">
+                </picture>
                 <div class="logo-text">
                     <span class="brand-title">DDL Group</span>
                     <span class="brand-subtitle">Services Catalog</span>
@@ -329,8 +340,8 @@
             </a>
 
             <!-- Desktop Nav Links -->
-            <nav class="desktop-nav-links">
-                <a href="#starter-offer" class="nav-highlight-link"><i class="fa-solid fa-fire text-amber"></i> Website @ ₹1,499</a>
+            <nav class="desktop-nav-links" aria-label="Main Navigation">
+                <a href="#starter-offer" class="nav-highlight-link"><i class="fa-solid fa-fire text-amber" aria-hidden="true"></i> Website @ ₹1,499</a>
                 <a href="#services">All Services</a>
                 <a href="#featured-products">Featured Platforms</a>
                 <a href="#website-plans">Website Plans</a>
@@ -339,59 +350,62 @@
             </nav>
 
             <div class="nav-actions">
-                <button type="button" class="btn btn-primary btn-header-enquiry open-enquiry-modal-btn" data-service="General Service Inquiry">
-                    <i class="fa-solid fa-paper-plane"></i> <span class="enquiry-btn-text">Quick Enquiry</span>
+                <button type="button" class="btn btn-primary btn-header-enquiry open-enquiry-modal-btn" data-service="General Service Inquiry" aria-label="Open Quick Enquiry Form">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> <span class="enquiry-btn-text">Quick Enquiry</span>
                 </button>
                 <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Open navigation menu">
-                    <i class="fa-solid fa-bars" id="toggle-icon"></i>
+                    <i class="fa-solid fa-bars" id="toggle-icon" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
     </header>
 
     <!-- CLEAN MOBILE MENU DRAWER -->
-    <div class="mobile-fullscreen-menu" id="mobile-menu-overlay">
+    <div class="mobile-fullscreen-menu" id="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
         <div class="mobile-menu-header">
-            <a href="#" class="brand-logo">
-                <img src="logo.png" alt="DDL Group Logo" class="logo-img-sm" onerror="this.onerror=null; this.src='ddlg logo.jpg';">
+            <a href="#services" class="brand-logo" aria-label="DDL Group Mobile Logo">
+                <picture>
+                    <source srcset="logo.webp" type="image/webp">
+                    <img src="logo.png" alt="DDL Group Logo" width="36" height="36" class="logo-img-sm" decoding="async">
+                </picture>
                 <span class="brand-title-mobile">DDL Group Services</span>
             </a>
-            <button class="mobile-close-btn" id="mobile-close" aria-label="Close menu">
-                <i class="fa-solid fa-xmark"></i>
+            <button class="mobile-close-btn" id="mobile-close" aria-label="Close navigation menu">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
             </button>
         </div>
 
         <div class="mobile-menu-body">
-            <nav class="mobile-nav-list">
+            <nav class="mobile-nav-list" aria-label="Mobile Menu Links">
                 <a href="#starter-offer" class="mobile-nav-item featured-mobile-link">
-                    <i class="fa-solid fa-fire text-amber"></i> Starter Website @ ₹1,499 (Featured Offer)
+                    <i class="fa-solid fa-fire text-amber" aria-hidden="true"></i> Starter Website @ ₹1,499 (Featured Offer)
                 </a>
                 <a href="#services" class="mobile-nav-item">
-                    <i class="fa-solid fa-layer-group"></i> All Services Catalog
+                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i> All Services Catalog
                 </a>
                 <a href="#featured-products" class="mobile-nav-item">
-                    <i class="fa-solid fa-star"></i> Featured Platforms
+                    <i class="fa-solid fa-star" aria-hidden="true"></i> Featured Platforms
                 </a>
                 <a href="#website-plans" class="mobile-nav-item">
-                    <i class="fa-solid fa-tags"></i> Website Packages
+                    <i class="fa-solid fa-tags" aria-hidden="true"></i> Website Packages
                 </a>
                 <a href="#portfolio" class="mobile-nav-item">
-                    <i class="fa-solid fa-award"></i> Proven Track Record
+                    <i class="fa-solid fa-award" aria-hidden="true"></i> Proven Track Record
                 </a>
                 <a href="#faq" class="mobile-nav-item">
-                    <i class="fa-solid fa-circle-question"></i> FAQ
+                    <i class="fa-solid fa-circle-question" aria-hidden="true"></i> FAQ
                 </a>
             </nav>
 
             <div class="mobile-contact-box">
-                <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn mobile-nav-item" data-service="General Service Inquiry">
-                    <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn mobile-nav-item" data-service="General Service Inquiry" aria-label="Open Quick Enquiry Form from Mobile">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                 </button>
-                <a href="tel:7551067843" class="btn btn-outline-light btn-full">
-                    <i class="fa-solid fa-phone"></i> Call 7551067843
+                <a href="tel:7551067843" class="btn btn-outline-light btn-full" aria-label="Direct Phone Call to 7551067843">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i> Call 7551067843
                 </a>
-                <a href="https://wa.me/917551067843?text=Hello+DDL+Group%2C+I+am+interested+in+your+services." target="_blank" class="btn btn-whatsapp-mobile btn-full">
-                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                <a href="https://wa.me/917551067843?text=Hello+DDL+Group%2C+I+am+interested+in+your+services." target="_blank" rel="noopener" class="btn btn-whatsapp-mobile btn-full" aria-label="Chat with DDL Group on WhatsApp">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
                 </a>
             </div>
         </div>
@@ -402,17 +416,17 @@
         <div class="container">
             <div class="starter-spotlight-card">
                 <div class="spotlight-left">
-                    <div class="spotlight-badge"><i class="fa-solid fa-fire"></i> FLAGSHIP FEATURED PRODUCT</div>
-                    <h2 class="spotlight-title">Starter Multi-Page <span class="text-primary">Website at ₹1,499</span></h2>
+                    <div class="spotlight-badge"><i class="fa-solid fa-fire" aria-hidden="true"></i> FLAGSHIP FEATURED PRODUCT</div>
+                    <h1 class="spotlight-title">Starter Multi-Page <span class="text-primary">Website at ₹1,499</span></h1>
                     <p class="spotlight-desc">
                         Our #1 most popular web package! Get a complete 5-page custom responsive website designed by DDL Group. Includes free domain (.in or .co.in), high-speed cloud hosting, SSL security, WhatsApp and call buttons.
                     </p>
                     <div class="spotlight-highlights">
-                        <span><i class="fa-solid fa-circle-check text-primary"></i> 5 Custom Pages + Home</span>
-                        <span><i class="fa-solid fa-circle-check text-primary"></i> Free .IN / .CO.IN Domain (1 Year)</span>
-                        <span><i class="fa-solid fa-circle-check text-primary"></i> High-Speed Hosting + SSL</span>
-                        <span><i class="fa-solid fa-circle-check text-primary"></i> WhatsApp & Call Integration</span>
-                        <span><i class="fa-solid fa-circle-check text-primary"></i> SEO Ready & Mobile Responsive</span>
+                        <span><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> 5 Custom Pages + Home</span>
+                        <span><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Free .IN / .CO.IN Domain (1 Year)</span>
+                        <span><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> High-Speed Hosting + SSL</span>
+                        <span><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> WhatsApp & Call Integration</span>
+                        <span><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> SEO Ready & Mobile Responsive</span>
                     </div>
                 </div>
                 <div class="spotlight-right text-center">
@@ -421,8 +435,8 @@
                         <div class="spotlight-big-price">₹1,499</div>
                         <span class="spotlight-regular-strike">Regular Renewal ₹2,999/yr</span>
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg btn-full open-enquiry-modal-btn" data-service="Starter Website at ₹1499 (1st yr)">
-                        <i class="fa-solid fa-bolt"></i> Claim Website at ₹1,499
+                    <button type="button" class="btn btn-primary btn-lg btn-full open-enquiry-modal-btn" data-service="Starter Website at ₹1499 (1st yr)" aria-label="Claim Starter Website at 1499 rupees">
+                        <i class="fa-solid fa-bolt" aria-hidden="true"></i> Claim Website at ₹1,499
                     </button>
                 </div>
             </div>
@@ -435,9 +449,9 @@
             
             <!-- Hero Title & Live Search Box -->
             <div class="services-hero-header text-center">
-                <h1 class="hero-main-title">
+                <h2 class="hero-main-title">
                     Explore Every Service by <span class="text-primary">DDL Group</span>
-                </h1>
+                </h2>
                 
                 <p class="hero-lead-text">
                     Browse all official digital services, managed software, web packages, and business automation. Filter instantly as you type.
@@ -446,10 +460,11 @@
                 <!-- Live Search Bar -->
                 <div class="search-box-wrapper">
                     <div class="search-input-container">
-                        <i class="fa-solid fa-magnifying-glass search-field-icon"></i>
+                        <label for="serviceSearchInput" class="hidden">Search services</label>
+                        <i class="fa-solid fa-magnifying-glass search-field-icon" aria-hidden="true"></i>
                         <input type="text" id="serviceSearchInput" placeholder="Search any service (e.g., logo, brochure, email, website 1499, billing 1999, erp 499, lms 9999, legal 4999, rfid 4999, automation 1999)..." autocomplete="off">
-                        <button type="button" id="clearSearchBtn" class="search-clear-btn hidden" title="Clear Search">
-                            <i class="fa-solid fa-xmark"></i>
+                        <button type="button" id="clearSearchBtn" class="search-clear-btn hidden" title="Clear Search" aria-label="Clear Search Input">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
                         </button>
                     </div>
                     <div class="search-status-bar">
@@ -460,11 +475,11 @@
 
             <!-- No Search Results Notice -->
             <div id="noResultsNotice" class="no-results-card hidden text-center">
-                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
                 <h3>No Matching Services Found</h3>
                 <p>We couldn't find any service matching your search query. Try another keyword or clear your search.</p>
-                <button type="button" class="btn btn-primary btn-sm" id="resetSearchBtn">
-                    <i class="fa-solid fa-rotate-left"></i> View All Services
+                <button type="button" class="btn btn-primary btn-sm" id="resetSearchBtn" aria-label="Reset Search Filters">
+                    <i class="fa-solid fa-rotate-left" aria-hidden="true"></i> View All Services
                 </button>
             </div>
 
@@ -486,13 +501,13 @@
                         Professional graphic design for logos, digital web banners, corporate letterheads, and any type of business/event posters.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Premium Logo Design with transparent PNG & Vector SVG</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Digital Web Banners & Social Media Cover Headers</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Official Letterhead Design & Any Type Event Posters</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Premium Logo Design with transparent PNG & Vector SVG</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Digital Web Banners & Social Media Cover Headers</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Official Letterhead Design & Any Type Event Posters</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Logo, Banner, Letterhead or Poster Design (₹199)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Logo, Banner, Letterhead or Poster Design (₹199)" aria-label="Enquire about Logo, Banner, Letterhead or Poster Design">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -512,13 +527,13 @@
                         Comprehensive corporate multi-page brochure (10–12 pages) showcasing your company profile, full services, products, and contact details.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> 10 to 12 custom designed modern corporate pages</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> High-resolution print-ready PDF + digital shareable file</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Fast turnaround with text & image formatting revisions</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> 10 to 12 custom designed modern corporate pages</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> High-resolution print-ready PDF + digital shareable file</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Fast turnaround with text & image formatting revisions</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Company Brochure Design (10-12 Pages - ₹499)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Company Brochure Design (10-12 Pages - ₹499)" aria-label="Enquire about Company Brochure Design">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -538,13 +553,13 @@
                         Custom branded email addresses (info@yourcompany.com) with 5 GB inbox storage per user and complete DNS security setup.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> 2 Users: ₹49/mo (₹588/yr) | 5 Users: ₹99/mo (₹1,188/yr)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> 5 GB inbox storage per user with spam filtering</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Full SPF & DKIM DNS records configured for you</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> 2 Users: ₹49/mo (₹588/yr) | 5 Users: ₹99/mo (₹1,188/yr)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> 5 GB inbox storage per user with spam filtering</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Full SPF & DKIM DNS records configured for you</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Business Email (Starting ₹49/mo)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Business Email (Starting ₹49/mo)" aria-label="Enquire about Professional Business Email">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -564,16 +579,16 @@
                         Digital campus ERP: online admissions, automated fee collection, marksheet generator, routine timetable, and parent notifications.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> <strong>Basic (₹499/mo):</strong> Admissions, Student List & Parent Contact</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> <strong>Standard (₹999/mo):</strong> Exams, Marksheet Designer & Admit Cards</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> <strong>Premium (₹1,999/mo):</strong> Full Suite, ID Cards & Certificates</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> <strong>Basic (₹499/mo):</strong> Admissions, Student List & Parent Contact</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> <strong>Standard (₹999/mo):</strong> Exams, Marksheet Designer & Admit Cards</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> <strong>Premium (₹1,999/mo):</strong> Full Suite, ID Cards & Certificates</li>
                     </ul>
                     <div class="service-card-footer dual-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="School Management System ERP (myschoolmanager.co.in)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for School
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="School Management System ERP (myschoolmanager.co.in)" aria-label="Enquire about School Management ERP">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for School
                         </button>
-                        <a href="https://myschoolmanager.co.in" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit MySchoolManager
+                        <a href="https://myschoolmanager.co.in" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit MySchoolManager ERP Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit MySchoolManager
                         </a>
                     </div>
                 </div>
@@ -593,13 +608,13 @@
                         Permanent lifetime Google Maps & Local Search listing. Full verification, category optimization, and local ranking boost.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Complete profile setup & Google verification</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Category & keyword optimization for map ranking</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Logo, photos, operating hours & service area config</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Complete profile setup & Google verification</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Category & keyword optimization for map ranking</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Logo, photos, operating hours & service area config</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Google Business Profile (₹500)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Google Business Profile (₹500)" aria-label="Enquire about Google Business Profile Setup">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -619,16 +634,16 @@
                         Enterprise transactional trigger email infrastructure powered by Zoho ZeptoMail SMTP. 99.8% inbox delivery with real-time tracking.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Dedicated SMTP & API credentials for web/mobile apps</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Full SPF, DKIM & DMARC domain authentication</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Real-time bounce logs, credit balance & webhook tracking</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Dedicated SMTP & API credentials for web/mobile apps</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Full SPF, DKIM & DMARC domain authentication</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Real-time bounce logs, credit balance & webhook tracking</li>
                     </ul>
                     <div class="service-card-footer dual-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Bulk & Transactional Email Service">
-                            <i class="fa-solid fa-paper-plane"></i> Get MailHub Setup
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Bulk & Transactional Email Service" aria-label="Enquire about Bulk & Transactional Email Service">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Get MailHub Setup
                         </button>
-                        <a href="https://ddlgroupmailhub.ddlg.in/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit MailHub Portal
+                        <a href="https://ddlgroupmailhub.ddlg.in/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit MailHub Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit MailHub Portal
                         </a>
                     </div>
                 </div>
@@ -648,13 +663,13 @@
                         Professional 5-page custom responsive website designed by DDL Group. Includes free domain (.in or .co.in), high-speed cloud hosting & SSL.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Up to 5 custom designed pages + SEO optimization</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Free .IN / .CO.IN Domain & Fast Cloud Hosting (1 Year)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> WhatsApp & Phone Call direct buttons integrated</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Up to 5 custom designed pages + SEO optimization</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Free .IN / .CO.IN Domain & Fast Cloud Hosting (1 Year)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> WhatsApp & Phone Call direct buttons integrated</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Starter Website at ₹1499 (1st yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Claim ₹1,499 Offer
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Starter Website at ₹1499 (1st yr)" aria-label="Claim Starter Website at 1499 offer">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Claim ₹1,499 Offer
                         </button>
                     </div>
                 </div>
@@ -674,13 +689,13 @@
                         Targeted Facebook and Instagram advertising campaigns managed by DDL Group to generate phone inquiries, leads, and sales.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Precise geographic & demographic audience targeting</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Creative ad poster design & high-converting ad copy</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Direct WhatsApp lead routing & transparent reporting</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Precise geographic & demographic audience targeting</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Creative ad poster design & high-converting ad copy</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Direct WhatsApp lead routing & transparent reporting</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Facebook & Instagram Ads Management">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Facebook & Instagram Ads Management" aria-label="Enquire about Meta Ads Management">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -700,16 +715,16 @@
                         Complete cloud platform: instant GST/non-GST billing, lead pipeline, daily work tracker, and digital Hisab Khata for Bengal businesses.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Instant GST & Non-GST invoice maker with PDF download</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Lead management pipeline with follow-up reminders</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Daily work tracking & income/expense analytics</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Instant GST & Non-GST invoice maker with PDF download</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Lead management pipeline with follow-up reminders</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Daily work tracking & income/expense analytics</li>
                     </ul>
                     <div class="service-card-footer dual-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Smart Billing & Business Management Software (Hisab Nikas)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for Business
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Smart Billing & Business Management Software (Hisab Nikas)" aria-label="Enquire about Hisab Nikas Billing Software">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for Business
                         </button>
-                        <a href="https://www.hisabnikas.com/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit HisabNikas.com
+                        <a href="https://www.hisabnikas.com/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit Hisab Nikas Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit HisabNikas.com
                         </a>
                     </div>
                 </div>
@@ -729,14 +744,14 @@
                         End-to-end automation for your business: 24/7 WhatsApp AI chatbots, auto Facebook post publishing, interactive quiz chatbots, and n8n workflows.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> 24/7 WhatsApp AI customer support & auto-responder chatbots</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Automated Facebook & social media post publishing & scheduling</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Interactive quiz, survey & lead qualification chatbots</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Multi-step n8n automation for Google Sheets, CRM & order alerts</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> 24/7 WhatsApp AI customer support & auto-responder chatbots</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Automated Facebook & social media post publishing & scheduling</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Interactive quiz, survey & lead qualification chatbots</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Multi-step n8n automation for Google Sheets, CRM & order alerts</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="AI Chatbots & Multi-Channel Automation (Starting ₹1,999/yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for Automation
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="AI Chatbots & Multi-Channel Automation (Starting ₹1,999/yr)" aria-label="Enquire about AI Chatbots and Automation">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for Automation
                         </button>
                     </div>
                 </div>
@@ -756,13 +771,13 @@
                         Complete 30-day social media management for Facebook, Instagram, Twitter, and LinkedIn. Includes creative posters & reels.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Up to 30 custom designed creative posts in 30 days</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Short video reels to boost reach & user engagement</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Captions, hashtags, and organic growth strategy</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Up to 30 custom designed creative posts in 30 days</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Short video reels to boost reach & user engagement</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Captions, hashtags, and organic growth strategy</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Social Media Management (₹2,999/mo)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Social Media Management (₹2,999/mo)" aria-label="Enquire about Social Media Management">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -782,13 +797,13 @@
                         Custom website for startups & shops with image gallery admin panel for self-updates. (Basic site available at ₹1,499).
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Custom responsive design (5–6 pages + Home)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Free Domain Included: <strong>.in</strong> or <strong>.co.in</strong> (1 Year)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Image gallery admin panel + hosting + SSL included</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Custom responsive design (5–6 pages + Home)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Free Domain Included: <strong>.in</strong> or <strong>.co.in</strong> (1 Year)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Image gallery admin panel + hosting + SSL included</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Admin Panel Starter Website (₹4,999/yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Admin Panel Starter Website (₹4,999/yr)" aria-label="Enquire about Admin Panel Starter Website">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -808,16 +823,16 @@
                         Case & chamber management software for advocates and law firms. Hearing calendar, petition vault, and fee ledger per case.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Case file manager with hearing status & stage history</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Court date calendar with WhatsApp hearing reminders</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Secure petition/evidence document archive & fee ledger</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Case file manager with hearing status & stage history</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Court date calendar with WhatsApp hearing reminders</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Secure petition/evidence document archive & fee ledger</li>
                     </ul>
                     <div class="service-card-footer dual-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Legal Management System (Case Vault - ₹4,999/yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for Legal
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Legal Management System (Case Vault - ₹4,999/yr)" aria-label="Enquire about Legal Case Vault">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for Legal
                         </button>
-                        <a href="https://casevault.ddlg.in/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit CaseVault
+                        <a href="https://casevault.ddlg.in/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit Case Vault Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit CaseVault
                         </a>
                     </div>
                 </div>
@@ -837,13 +852,13 @@
                         USB RFID scanner machine + Windows desktop management suite + Android employee app with real-time WhatsApp alerts. (Cards separate).
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> USB RFID Scanner Machine + Windows Desktop Software</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Android employee mobile app with instant WhatsApp alerts</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Hybrid SQLite local storage + central cloud sync (Cards sold separately)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> USB RFID Scanner Machine + Windows Desktop Software</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Android employee mobile app with instant WhatsApp alerts</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Hybrid SQLite local storage + central cloud sync (Cards sold separately)</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="RFID Attendance System (₹4,999 - Machine & Software)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="RFID Attendance System (₹4,999 - Machine & Software)" aria-label="Enquire about RFID Attendance System">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -863,13 +878,13 @@
                         Ideal for growing businesses, resorts, homestays, and clinics. Features online booking facility & custom admin suite.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Online booking / reservation inquiry facility</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Free Domain: <strong>.com, .in, .org, or .co.in</strong> (1 Year)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Advanced admin panel for gallery & document uploads</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Online booking / reservation inquiry facility</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Free Domain: <strong>.com, .in, .org, or .co.in</strong> (1 Year)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Advanced admin panel for gallery & document uploads</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Standard Website Package (₹7,999/yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Standard Website Package (₹7,999/yr)" aria-label="Enquire about Standard Website Package">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -889,13 +904,13 @@
                         Custom native Android applications designed for your business. Includes Firebase cloud backend & Play Store release support.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Custom UI/UX matching your business operations</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Real-time cloud database & push notifications</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Google Play Store listing and rollout assistance</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Custom UI/UX matching your business operations</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Real-time cloud database & push notifications</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Google Play Store listing and rollout assistance</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Android App Development (Starting ₹9,999)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Android App Development (Starting ₹9,999)" aria-label="Enquire about Android App Development">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -915,16 +930,16 @@
                         Online learning portal for coaching centers and tutors. Host video classes, study notes, mock tests with auto-grading, and reports.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Course content management (video lectures, notes, PDFs)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Online mock test engine with instant auto-grading</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Student performance analytics & certificates</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Course content management (video lectures, notes, PDFs)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Online mock test engine with instant auto-grading</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Student performance analytics & certificates</li>
                     </ul>
                     <div class="service-card-footer dual-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Learning Management System LMS (Starting ₹9,999/yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for LMS
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Learning Management System LMS (Starting ₹9,999/yr)" aria-label="Enquire about Learning Management System LMS">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for LMS
                         </button>
-                        <a href="https://panchayatexam.org" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit PanchayatExam
+                        <a href="https://panchayatexam.org" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit PanchayatExam LMS Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit PanchayatExam
                         </a>
                     </div>
                 </div>
@@ -944,13 +959,13 @@
                         Complete online store with Razorpay/UPI payment gateway, domain, secure cloud hosting, and full 1-year maintenance.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> 10-Product initial setup, catalog upload & styling</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Online payment gateway integration (Razorpay / UPI)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Product & order management admin panel included</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> 10-Product initial setup, catalog upload & styling</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Online payment gateway integration (Razorpay / UPI)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Product & order management admin panel included</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="E-Commerce Website (₹10,000/yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="E-Commerce Website (₹10,000/yr)" aria-label="Enquire about E-Commerce Website">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -970,13 +985,13 @@
                         Full-scale corporate platform with payment gateway integration, room/facility management, and any TLD domain (.com, .org).
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Online payment gateway & booking management suite</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Any TLD Domain (.com, .in, .org) with fast hosting</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Custom feature engineering tailored to business goals</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Online payment gateway & booking management suite</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Any TLD Domain (.com, .in, .org) with fast hosting</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Custom feature engineering tailored to business goals</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Premium Enterprise Website (Custom Quote)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Premium Enterprise Website (Custom Quote)" aria-label="Get Custom Quote for Premium Enterprise Website">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -995,13 +1010,13 @@
                         Bespoke software built for your exact business requirements: Windows desktop suites, inventory systems, CRMs, and SaaS portals.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Windows desktop applications (SQLite + Cloud sync)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Web application dashboards with multi-role permissions</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Custom REST API integrations & database systems</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Windows desktop applications (SQLite + Cloud sync)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Web application dashboards with multi-role permissions</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Custom REST API integrations & database systems</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Custom Desktop/Web Software">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Custom Desktop/Web Software" aria-label="Enquire about Custom Desktop and Web Software">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -1020,13 +1035,13 @@
                         Rank your business on the 1st page of Google. On-page technical SEO, content optimization, schema markup & local citation building.
                     </p>
                     <ul class="service-points-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Competitor analysis & profitable keyword research</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Technical On-Page SEO & Schema JSON-LD integration</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Monthly Google ranking & organic traffic reports</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Competitor analysis & profitable keyword research</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Technical On-Page SEO & Schema JSON-LD integration</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Monthly Google ranking & organic traffic reports</li>
                     </ul>
                     <div class="service-card-footer">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="SEO (Search Engine Optimization)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire Now
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="SEO (Search Engine Optimization)" aria-label="Enquire about SEO and Google Search Ranking">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire Now
                         </button>
                     </div>
                 </div>
@@ -1039,7 +1054,7 @@
     <section class="featured-platforms-section" id="featured-products">
         <div class="container">
             <div class="section-header text-center">
-                <span class="section-badge-tag"><i class="fa-solid fa-star"></i> FLAGSHIP PLATFORMS</span>
+                <span class="section-badge-tag"><i class="fa-solid fa-star" aria-hidden="true"></i> FLAGSHIP PLATFORMS</span>
                 <h2 class="section-main-title">Featured DDL Group Platforms</h2>
                 <p class="section-lead-subtitle">Explore our specialized software platforms with dedicated portals, free demos, and live onboarding.</p>
             </div>
@@ -1050,7 +1065,7 @@
                 <div class="platform-spotlight-card">
                     <div class="platform-card-header">
                         <div class="platform-icon-circle bg-blue-subtle">
-                            <i class="fa-solid fa-school text-primary"></i>
+                            <i class="fa-solid fa-school text-primary" aria-hidden="true"></i>
                         </div>
                         <div>
                             <h3 class="platform-name">School Management System (ERP)</h3>
@@ -1065,17 +1080,17 @@
                         End-to-end digital campus ERP solution for schools, academies, and educational institutions with student and parent portals.
                     </p>
                     <ul class="platform-points">
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> <strong>Basic (₹499/mo):</strong> Student Admissions, Identity Records & Parent Contact</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> <strong>Standard (₹999/mo):</strong> Marksheet Designer, Exams & Admit Card Generator</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> <strong>Premium (₹1,999/mo):</strong> Full School Automation, ID Cards & Certificates</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Automated WhatsApp/SMS alerts to parents for marks & fee dues</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> <strong>Basic (₹499/mo):</strong> Student Admissions, Identity Records & Parent Contact</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> <strong>Standard (₹999/mo):</strong> Marksheet Designer, Exams & Admit Card Generator</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> <strong>Premium (₹1,999/mo):</strong> Full School Automation, ID Cards & Certificates</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Automated WhatsApp/SMS alerts to parents for marks & fee dues</li>
                     </ul>
                     <div class="platform-footer-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="School Management System ERP (myschoolmanager.co.in)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for School
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="School Management System ERP (myschoolmanager.co.in)" aria-label="Enquire for School ERP">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for School
                         </button>
-                        <a href="https://myschoolmanager.co.in" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit MySchoolManager Portal
+                        <a href="https://myschoolmanager.co.in" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit MySchoolManager Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit MySchoolManager Portal
                         </a>
                     </div>
                 </div>
@@ -1084,7 +1099,7 @@
                 <div class="platform-spotlight-card">
                     <div class="platform-card-header">
                         <div class="platform-icon-circle bg-cyan-subtle">
-                            <i class="fa-solid fa-graduation-cap text-cyan"></i>
+                            <i class="fa-solid fa-graduation-cap text-cyan" aria-hidden="true"></i>
                         </div>
                         <div>
                             <h3 class="platform-name">Learning Management System (LMS)</h3>
@@ -1099,17 +1114,17 @@
                         Online learning, competitive test series & examination portal engineered for coaching centers, tutors, and educational academies.
                     </p>
                     <ul class="platform-points">
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Video lectures, PDF study notes & resource management</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Online mock test & quiz engine with instant auto-grading</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Student performance analytics & rank leaderboards</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Course completion certificate generation system</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Video lectures, PDF study notes & resource management</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Online mock test & quiz engine with instant auto-grading</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Student performance analytics & rank leaderboards</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Course completion certificate generation system</li>
                     </ul>
                     <div class="platform-footer-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Learning Management System LMS (Starting ₹9,999/yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for LMS
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Learning Management System LMS (Starting ₹9,999/yr)" aria-label="Enquire for Learning Management System LMS">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for LMS
                         </button>
-                        <a href="https://panchayatexam.org" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit PanchayatExam Portal
+                        <a href="https://panchayatexam.org" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit PanchayatExam Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit PanchayatExam Portal
                         </a>
                     </div>
                 </div>
@@ -1118,7 +1133,7 @@
                 <div class="platform-spotlight-card">
                     <div class="platform-card-header">
                         <div class="platform-icon-circle bg-blue-subtle">
-                            <i class="fa-solid fa-file-invoice-dollar text-primary"></i>
+                            <i class="fa-solid fa-file-invoice-dollar text-primary" aria-hidden="true"></i>
                         </div>
                         <div>
                             <h3 class="platform-name">Smart Billing & Business Software</h3>
@@ -1133,17 +1148,17 @@
                         Cloud-based smart billing, GST & non-GST invoice generation, lead tracking pipeline, and digital Hisab Khata made for West Bengal businesses.
                     </p>
                     <ul class="platform-points">
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Instant GST & Non-GST invoice creation with 1-click PDF sharing</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Complete Lead Management Pipeline & staff assignment</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Daily work, operations & task tracking system</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Income & expense digital khata with profit/loss graphs</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Instant GST & Non-GST invoice creation with 1-click PDF sharing</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Complete Lead Management Pipeline & staff assignment</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Daily work, operations & task tracking system</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Income & expense digital khata with profit/loss graphs</li>
                     </ul>
                     <div class="platform-footer-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Smart Billing & Business Management Software (Hisab Nikas)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for Business
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Smart Billing & Business Management Software (Hisab Nikas)" aria-label="Enquire for Hisab Nikas Billing">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for Business
                         </button>
-                        <a href="https://www.hisabnikas.com/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit HisabNikas.com
+                        <a href="https://www.hisabnikas.com/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit HisabNikas Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit HisabNikas.com
                         </a>
                     </div>
                 </div>
@@ -1152,7 +1167,7 @@
                 <div class="platform-spotlight-card">
                     <div class="platform-card-header">
                         <div class="platform-icon-circle bg-blue-subtle">
-                            <i class="fa-solid fa-scale-balanced text-primary"></i>
+                            <i class="fa-solid fa-scale-balanced text-primary" aria-hidden="true"></i>
                         </div>
                         <div>
                             <h3 class="platform-name">Legal Case Vault (Advocate Software)</h3>
@@ -1167,17 +1182,17 @@
                         Comprehensive case and chamber management system built specially for advocates, lawyers, and legal chambers.
                     </p>
                     <ul class="platform-points">
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Case file manager with hearing status & stage history tracking</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Court hearing date calendar with WhatsApp/SMS reminders</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Secure petition & digital evidence document vault</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Client billing & legal fee ledger per case</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Case file manager with hearing status & stage history tracking</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Court hearing date calendar with WhatsApp/SMS reminders</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Secure petition & digital evidence document vault</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Client billing & legal fee ledger per case</li>
                     </ul>
                     <div class="platform-footer-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Legal Management System (Case Vault - ₹4,999/yr)">
-                            <i class="fa-solid fa-paper-plane"></i> Enquire for Legal
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Legal Management System (Case Vault - ₹4,999/yr)" aria-label="Enquire for Legal Case Vault">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquire for Legal
                         </button>
-                        <a href="https://casevault.ddlg.in/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit CaseVault Portal
+                        <a href="https://casevault.ddlg.in/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit CaseVault Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit CaseVault Portal
                         </a>
                     </div>
                 </div>
@@ -1186,7 +1201,7 @@
                 <div class="platform-spotlight-card">
                     <div class="platform-card-header">
                         <div class="platform-icon-circle bg-cyan-subtle">
-                            <i class="fa-solid fa-envelope-circle-check text-cyan"></i>
+                            <i class="fa-solid fa-envelope-circle-check text-cyan" aria-hidden="true"></i>
                         </div>
                         <div>
                             <h3 class="platform-name">Managed Bulk & Transactional Email</h3>
@@ -1201,17 +1216,17 @@
                         Enterprise transactional trigger email infrastructure powered by Zoho ZeptoMail SMTP. High deliverability (99.8%) with real-time tracking.
                     </p>
                     <ul class="platform-points">
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Zero-latency sending pipeline via direct SMTP & REST API</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> SPF, DKIM, DMARC DNS setup ensuring inbox placement</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Real-time bounce event logs & credit balance monitoring</li>
-                        <li><i class="fa-solid fa-circle-check text-primary"></i> Setup ₹499 • Packages from 10k (₹499) to 100k (₹2,499)</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Zero-latency sending pipeline via direct SMTP & REST API</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> SPF, DKIM, DMARC DNS setup ensuring inbox placement</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Real-time bounce event logs & credit balance monitoring</li>
+                        <li><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Setup ₹499 • Packages from 10k (₹499) to 100k (₹2,499)</li>
                     </ul>
                     <div class="platform-footer-actions">
-                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Bulk & Transactional Email Service">
-                            <i class="fa-solid fa-paper-plane"></i> Get MailHub Setup
+                        <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Bulk & Transactional Email Service" aria-label="Enquire for MailHub Email Service">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Get MailHub Setup
                         </button>
-                        <a href="https://ddlgroupmailhub.ddlg.in/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit MailHub Portal
+                        <a href="https://ddlgroupmailhub.ddlg.in/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-full" aria-label="Visit MailHub Portal">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visit MailHub Portal
                         </a>
                     </div>
                 </div>
@@ -1224,7 +1239,7 @@
     <section class="website-plans-section" id="website-plans">
         <div class="container">
             <div class="section-header text-center">
-                <span class="section-badge-tag"><i class="fa-solid fa-tags"></i> ANNUAL PLANS</span>
+                <span class="section-badge-tag"><i class="fa-solid fa-tags" aria-hidden="true"></i> ANNUAL PLANS</span>
                 <h2 class="section-main-title">Transparent DDL Group Website Packages</h2>
                 <p class="section-lead-subtitle">All plans include custom responsive design, free domain, fast hosting, SSL, and dedicated technical maintenance.</p>
             </div>
@@ -1240,13 +1255,13 @@
                         <p class="plan-summary">Our best-value starter website package (Regular ₹2,999/yr).</p>
                     </div>
                     <ul class="plan-features-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Up to 5 custom responsive pages</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Free Domain: <strong>.in</strong> or <strong>.co.in</strong> (1 Year)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> High-speed cloud hosting + Free SSL</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> WhatsApp & Phone Call direct buttons</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Mobile responsive & basic SEO setup</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Up to 5 custom responsive pages</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Free Domain: <strong>.in</strong> or <strong>.co.in</strong> (1 Year)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> High-speed cloud hosting + Free SSL</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> WhatsApp & Phone Call direct buttons</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Mobile responsive & basic SEO setup</li>
                     </ul>
-                    <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Starter Website at ₹1499 (1st yr)">
+                    <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Starter Website at ₹1499 (1st yr)" aria-label="Choose Starter Website Plan at 1499">
                         Choose Starter Plan
                     </button>
                 </div>
@@ -1260,13 +1275,13 @@
                         <p class="plan-summary">Custom design with gallery admin panel for easy self-updates.</p>
                     </div>
                     <ul class="plan-features-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Custom responsive design (5–6 pages)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Free Domain: <strong>.in</strong> or <strong>.co.in</strong> (1 Year)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> WhatsApp & Phone Call direct buttons</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Image Gallery Admin Panel for self-updates</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Free SSL Certificate & Cloud Hosting</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Custom responsive design (5–6 pages)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Free Domain: <strong>.in</strong> or <strong>.co.in</strong> (1 Year)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> WhatsApp & Phone Call direct buttons</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Image Gallery Admin Panel for self-updates</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Free SSL Certificate & Cloud Hosting</li>
                     </ul>
-                    <button type="button" class="btn btn-outline-primary btn-full open-enquiry-modal-btn" data-service="Admin Panel Starter Website (₹4,999/yr)">
+                    <button type="button" class="btn btn-outline-primary btn-full open-enquiry-modal-btn" data-service="Admin Panel Starter Website (₹4,999/yr)" aria-label="Choose Admin Starter Website Plan at 4999">
                         Choose Admin Starter
                     </button>
                 </div>
@@ -1281,13 +1296,13 @@
                         <p class="plan-summary">Ideal for growing businesses, resorts, homestays, and clinics.</p>
                     </div>
                     <ul class="plan-features-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Online Booking / Reservation Facility</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Free Domain: <strong>.com, .in, .org, or .co.in</strong> (1 Year)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Advanced Admin Management Panel</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Gallery & Document Upload System</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Priority 24/7 Technical Support</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Online Booking / Reservation Facility</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Free Domain: <strong>.com, .in, .org, or .co.in</strong> (1 Year)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Advanced Admin Management Panel</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Gallery & Document Upload System</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Priority 24/7 Technical Support</li>
                     </ul>
-                    <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Standard Website Package (₹7,999/yr)">
+                    <button type="button" class="btn btn-primary btn-full open-enquiry-modal-btn" data-service="Standard Website Package (₹7,999/yr)" aria-label="Choose Standard Website Plan at 7999">
                         Choose Standard Plan
                     </button>
                 </div>
@@ -1301,13 +1316,13 @@
                         <p class="plan-summary">For established businesses, hotels, and multi-service organizations.</p>
                     </div>
                     <ul class="plan-features-list">
-                        <li><i class="fa-solid fa-check text-primary"></i> Online Payment Gateway Integration</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Room & Facility Reservation Suite</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Any TLD Domain (.com, .in, .org)</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Custom Feature Engineering on Request</li>
-                        <li><i class="fa-solid fa-check text-primary"></i> Dedicated Account Manager & VIP Support</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Online Payment Gateway Integration</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Room & Facility Reservation Suite</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Any TLD Domain (.com, .in, .org)</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Custom Feature Engineering on Request</li>
+                        <li><i class="fa-solid fa-check text-primary" aria-hidden="true"></i> Dedicated Account Manager & VIP Support</li>
                     </ul>
-                    <button type="button" class="btn btn-outline-primary btn-full open-enquiry-modal-btn" data-service="Premium Enterprise Website (Custom Quote)">
+                    <button type="button" class="btn btn-outline-primary btn-full open-enquiry-modal-btn" data-service="Premium Enterprise Website (Custom Quote)" aria-label="Get Custom Quote for Enterprise Website">
                         Get Custom Quote
                     </button>
                 </div>
@@ -1320,7 +1335,7 @@
     <section class="portfolio-section" id="portfolio">
         <div class="container">
             <div class="section-header text-center">
-                <span class="section-badge-tag"><i class="fa-solid fa-award"></i> PROVEN TRACK RECORD</span>
+                <span class="section-badge-tag"><i class="fa-solid fa-award" aria-hidden="true"></i> PROVEN TRACK RECORD</span>
                 <h2 class="section-main-title">Trusted By 150+ Clients Globally</h2>
                 <p class="section-lead-subtitle">Explore live client platforms and enterprise solutions engineered by DDL Group.</p>
             </div>
@@ -1329,34 +1344,34 @@
                 
                 <!-- Resorts -->
                 <div class="portfolio-client-box">
-                    <span class="client-cat-tag"><i class="fa-solid fa-hotel"></i> Hospitality & Resorts</span>
+                    <span class="client-cat-tag"><i class="fa-solid fa-hotel" aria-hidden="true"></i> Hospitality & Resorts</span>
                     <h4>Santiniketan & Bolpur Resorts (8 Properties)</h4>
                     <p>Custom booking engines, room showcase galleries, and direct reservation platforms engineered for premier resort and homestay properties.</p>
-                    <div class="track-record-badge"><i class="fa-solid fa-circle-check text-primary"></i> 8 Live Resort Deployments</div>
+                    <div class="track-record-badge"><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> 8 Live Resort Deployments</div>
                 </div>
 
                 <!-- SaaS & Software -->
                 <div class="portfolio-client-box">
-                    <span class="client-cat-tag"><i class="fa-solid fa-server"></i> Cloud Software</span>
+                    <span class="client-cat-tag"><i class="fa-solid fa-server" aria-hidden="true"></i> Cloud Software</span>
                     <h4>Cloud SaaS & Email Platforms</h4>
                     <p>High-deliverability transactional email infrastructure, GST billing suites, school ERPs, and case management portals serving businesses.</p>
-                    <div class="track-record-badge"><i class="fa-solid fa-circle-check text-primary"></i> 200+ Software Users</div>
+                    <div class="track-record-badge"><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> 200+ Software Users</div>
                 </div>
 
                 <!-- Healthcare -->
                 <div class="portfolio-client-box">
-                    <span class="client-cat-tag"><i class="fa-solid fa-hospital"></i> Healthcare & Hospitals</span>
+                    <span class="client-cat-tag"><i class="fa-solid fa-hospital" aria-hidden="true"></i> Healthcare & Hospitals</span>
                     <h4>Hospitals & Medical Clinics</h4>
                     <p>Hospital patient management systems, digital prescription management, and online doctor appointment booking portals.</p>
-                    <div class="track-record-badge"><i class="fa-solid fa-circle-check text-primary"></i> Multiple Healthcare Portals</div>
+                    <div class="track-record-badge"><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Multiple Healthcare Portals</div>
                 </div>
 
                 <!-- NGOs -->
                 <div class="portfolio-client-box">
-                    <span class="client-cat-tag"><i class="fa-solid fa-hand-holding-heart"></i> NGOs & Social Impact</span>
+                    <span class="client-cat-tag"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i> NGOs & Social Impact</span>
                     <h4>Non-Profit Foundations</h4>
                     <p>Digital web presence, social impact reporting, and secure online donation platforms engineered for certified non-profit organizations.</p>
-                    <div class="track-record-badge"><i class="fa-solid fa-circle-check text-primary"></i> Verified Social Foundations</div>
+                    <div class="track-record-badge"><i class="fa-solid fa-circle-check text-primary" aria-hidden="true"></i> Verified Social Foundations</div>
                 </div>
 
             </div>
@@ -1367,7 +1382,7 @@
     <section class="faq-section" id="faq">
         <div class="container">
             <div class="section-header text-center">
-                <span class="section-badge-tag"><i class="fa-solid fa-circle-question"></i> FREQUENTLY ASKED QUESTIONS</span>
+                <span class="section-badge-tag"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> FREQUENTLY ASKED QUESTIONS</span>
                 <h2 class="section-main-title">Got Questions? We Have Answers</h2>
                 <p class="section-lead-subtitle">Learn more about our development process, pricing transparency, and platform support.</p>
             </div>
@@ -1376,9 +1391,9 @@
                 
                 <!-- FAQ 1 -->
                 <div class="faq-accordion-item">
-                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                    <button type="button" class="faq-question-btn" aria-expanded="false" aria-label="Toggle answer for Why choose DDL Group">
                         <span class="faq-question-title">Why choose DDL Group for web design and software engineering?</span>
-                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                     </button>
                     <div class="faq-answer-content">
                         <p>Established in 2017 with Government Registration <strong>UDYAM-WB-04-0009815</strong>, DDL Group is West Bengal's leading digital agency. With 200+ projects successfully deployed for 150+ clients globally, we offer transparent pricing, reliable dedicated support, high-speed cloud hosting, and top-tier code engineering tailored to Indian businesses.</p>
@@ -1387,9 +1402,9 @@
 
                 <!-- FAQ 2 -->
                 <div class="faq-accordion-item">
-                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                    <button type="button" class="faq-question-btn" aria-expanded="false" aria-label="Toggle answer for What is included in the 1499 Starter Website package">
                         <span class="faq-question-title">What is included in the ₹1,499 Starter Website package?</span>
-                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                     </button>
                     <div class="faq-answer-content">
                         <p>The ₹1,499 Starter Website offer provides a complete 5-page custom responsive website, free <strong>.in</strong> or <strong>.co.in</strong> domain registration for 1 full year, fast cloud hosting, free SSL security certificate, WhatsApp and direct phone call buttons, and basic on-page SEO optimization.</p>
@@ -1398,9 +1413,9 @@
 
                 <!-- FAQ 3 -->
                 <div class="faq-accordion-item">
-                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                    <button type="button" class="faq-question-btn" aria-expanded="false" aria-label="Toggle answer for How does MySchoolManager ERP help schools">
                         <span class="faq-question-title">How does MySchoolManager ERP help schools and academies?</span>
-                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                     </button>
                     <div class="faq-answer-content">
                         <p>MySchoolManager (<a href="https://myschoolmanager.co.in" target="_blank" rel="noopener">myschoolmanager.co.in</a>) offers plans from ₹499/month (Basic), ₹999/month (Standard), and ₹1,999/month (Premium). It automates student admissions, digital fee collection receipts, marksheet and admit card generation, staff payroll/HR, and automated WhatsApp/SMS parent notifications.</p>
@@ -1409,9 +1424,9 @@
 
                 <!-- FAQ 4 -->
                 <div class="faq-accordion-item">
-                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                    <button type="button" class="faq-question-btn" aria-expanded="false" aria-label="Toggle answer for What makes Hisab Nikas the best billing software">
                         <span class="faq-question-title">What makes Hisab Nikas the best billing software for Bengal businesses?</span>
-                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                     </button>
                     <div class="faq-answer-content">
                         <p>Hisab Nikas (<a href="https://www.hisabnikas.com/" target="_blank" rel="noopener">hisabnikas.com</a>) is available at ₹1,999/year or ₹9,999 for a Lifetime license. It features 1-click GST/Non-GST billing with PDF WhatsApp sharing, lead pipeline tracking, daily task operations, and digital Khata accounting with automated profit & loss summaries.</p>
@@ -1420,9 +1435,9 @@
 
                 <!-- FAQ 5 -->
                 <div class="faq-accordion-item">
-                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                    <button type="button" class="faq-question-btn" aria-expanded="false" aria-label="Toggle answer for What hardware and software are included in RFID attendance package">
                         <span class="faq-question-title">What hardware and software are included in the ₹4,999 RFID attendance package?</span>
-                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                     </button>
                     <div class="faq-answer-content">
                         <p>The ₹4,999 package includes a USB RFID scanner machine, a Windows desktop management software suite, and an Android employee mobile app with WhatsApp attendance alerts and 1-click Excel payroll export. <em>(Note: RFID Smart Cards are sold separately as per required quantity)</em>.</p>
@@ -1431,9 +1446,9 @@
 
                 <!-- FAQ 6 -->
                 <div class="faq-accordion-item">
-                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                    <button type="button" class="faq-question-btn" aria-expanded="false" aria-label="Toggle answer for How does the AI Chatbot Automation package work">
                         <span class="faq-question-title">How does the ₹1,999 AI Chatbot & Multi-Channel Automation package work?</span>
-                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                        <span class="faq-icon-toggle"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
                     </button>
                     <div class="faq-answer-content">
                         <p>Starting at ₹1,999/year, we configure 24/7 WhatsApp AI customer support chatbots, automated Facebook/Instagram post scheduling and publishing, interactive quiz and exam chatbots, and multi-step n8n automation syncing leads directly with Google Sheets and CRMs.</p>
@@ -1448,8 +1463,11 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-col-brand">
-                <a href="https://ddlg.in" rel="dofollow" class="brand-logo footer-logo" title="DDL Group Main Portal">
-                    <img src="logo.png" alt="DDL Group Logo" class="logo-img-sm" onerror="this.onerror=null; this.src='ddlg logo.jpg';">
+                <a href="https://ddlg.in" rel="dofollow" class="brand-logo footer-logo" title="DDL Group Main Portal" aria-label="Visit DDL Group Main Agency Site">
+                    <picture>
+                        <source srcset="logo.webp" type="image/webp">
+                        <img src="logo.png" alt="DDL Group Logo" width="36" height="36" class="logo-img-sm" decoding="async">
+                    </picture>
                     <span class="brand-title-foot">Digital Design Leadership Group</span>
                 </a>
                 <p class="foot-reg">Government Registration No: <strong>UDYAM-WB-04-0009815</strong></p>
@@ -1476,16 +1494,16 @@
 
             <div class="footer-col-contact">
                 <h4>Contact DDL Group</h4>
-                <p><i class="fa-solid fa-mobile-screen-button text-cyan"></i> WhatsApp / Mobile: <a href="tel:7551067843">7551067843</a></p>
-                <p><i class="fa-solid fa-phone-volume text-cyan"></i> Landline: 03463 296702</p>
-                <p><i class="fa-solid fa-envelope text-cyan"></i> Email: <a href="mailto:contact@ddlg.in">contact@ddlg.in</a></p>
-                <p><i class="fa-solid fa-globe text-cyan"></i> Main Agency Website: <a href="https://ddlg.in" rel="dofollow" target="_blank"><strong>ddlg.in</strong></a></p>
+                <p><i class="fa-solid fa-mobile-screen-button text-cyan" aria-hidden="true"></i> WhatsApp / Mobile: <a href="tel:7551067843" aria-label="Call Mobile 7551067843">7551067843</a></p>
+                <p><i class="fa-solid fa-phone-volume text-cyan" aria-hidden="true"></i> Landline: <a href="tel:03463296702" aria-label="Call Landline 03463296702">03463 296702</a></p>
+                <p><i class="fa-solid fa-envelope text-cyan" aria-hidden="true"></i> Email: <a href="mailto:contact@ddlg.in" aria-label="Send Email to contact@ddlg.in">contact@ddlg.in</a></p>
+                <p><i class="fa-solid fa-globe text-cyan" aria-hidden="true"></i> Main Agency Website: <a href="https://ddlg.in" rel="dofollow" target="_blank" aria-label="Visit ddlg.in"><strong>ddlg.in</strong></a></p>
             </div>
         </div>
 
         <div class="footer-bottom-bar text-center">
             <div class="container">
-                <p>© 2017 – 2026 Digital Design Leadership Group (DDL Group). All Rights Reserved. Main Agency Site: <a href="https://ddlg.in" rel="dofollow" target="_blank" style="color:#94a3b8; text-decoration:underline;">ddlg.in</a>.</p>
+                <p>© 2017 – 2026 Digital Design Leadership Group (DDL Group). All Rights Reserved. Main Agency Site: <a href="https://ddlg.in" rel="dofollow" target="_blank" style="color:#cbd5e1; text-decoration:underline;" aria-label="DDL Group Official Website">ddlg.in</a>.</p>
             </div>
         </div>
     </footer>
@@ -1498,12 +1516,12 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <div class="modal-header-text">
-                        <span class="modal-sub-badge"><i class="fa-solid fa-paper-plane"></i> DDL GROUP QUICK ENQUIRY</span>
+                        <span class="modal-sub-badge"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> DDL GROUP QUICK ENQUIRY</span>
                         <h3 id="modalTitle" class="modal-title">Enquire About Service</h3>
                         <p class="modal-subtitle">Submit your request below for instant WhatsApp confirmation & fast team consultation.</p>
                     </div>
                     <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close enquiry form">
-                        <i class="fa-solid fa-xmark"></i>
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
                     </button>
                 </div>
 
@@ -1515,8 +1533,8 @@
                         <div class="form-field-group">
                             <label for="modalFullName">Full Name <span class="required-star">*</span></label>
                             <div class="field-input-box">
-                                <i class="fa-solid fa-user field-icon"></i>
-                                <input type="text" id="modalFullName" name="fullName" placeholder="Enter your full name" required>
+                                <i class="fa-solid fa-user field-icon" aria-hidden="true"></i>
+                                <input type="text" id="modalFullName" name="fullName" placeholder="Enter your full name" required autocomplete="name">
                             </div>
                         </div>
 
@@ -1524,8 +1542,8 @@
                         <div class="form-field-group">
                             <label for="modalPhone">WhatsApp / Mobile Number <span class="required-star">*</span></label>
                             <div class="field-input-box">
-                                <i class="fa-brands fa-whatsapp field-icon"></i>
-                                <input type="tel" id="modalPhone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                                <i class="fa-brands fa-whatsapp field-icon" aria-hidden="true"></i>
+                                <input type="tel" id="modalPhone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required autocomplete="tel">
                             </div>
                             <span class="field-hint">Enter 10-digit number for instant WhatsApp confirmation</span>
                         </div>
@@ -1534,8 +1552,8 @@
                         <div class="form-field-group">
                             <label for="modalEmail">Email Address (Optional)</label>
                             <div class="field-input-box">
-                                <i class="fa-solid fa-envelope field-icon"></i>
-                                <input type="email" id="modalEmail" name="email" placeholder="e.g. yourname@gmail.com">
+                                <i class="fa-solid fa-envelope field-icon" aria-hidden="true"></i>
+                                <input type="email" id="modalEmail" name="email" placeholder="e.g. yourname@gmail.com" autocomplete="email">
                             </div>
                         </div>
 
@@ -1543,7 +1561,7 @@
                         <div class="form-field-group">
                             <label for="modalService">Selected Service <span class="required-star">*</span></label>
                             <div class="field-input-box">
-                                <i class="fa-solid fa-list-check field-icon"></i>
+                                <i class="fa-solid fa-list-check field-icon" aria-hidden="true"></i>
                                 <select id="modalService" name="service" required>
                                     <option value="" disabled selected>-- Select Service --</option>
                                     <option value="Logo, Banner, Letterhead or Poster Design (₹199)">Logo, Banner, Letterhead or Poster Design — ₹199</option>
@@ -1576,7 +1594,7 @@
                         <div class="form-field-group full-width hidden" id="modalCustomServiceGroup">
                             <label for="modalCustomServiceInput">Specify Other Requirement <span class="required-star">*</span></label>
                             <div class="field-input-box">
-                                <i class="fa-solid fa-pen-to-square field-icon"></i>
+                                <i class="fa-solid fa-pen-to-square field-icon" aria-hidden="true"></i>
                                 <input type="text" id="modalCustomServiceInput" name="customServiceInput" placeholder="Specify your custom project requirements...">
                             </div>
                         </div>
@@ -1587,27 +1605,27 @@
                     <div class="form-field-group full-width">
                         <label for="modalMessage">Project Requirements / Notes (Optional)</label>
                         <div class="field-input-box">
-                            <i class="fa-solid fa-comment-dots field-icon field-icon-top"></i>
+                            <i class="fa-solid fa-comment-dots field-icon field-icon-top" aria-hidden="true"></i>
                             <textarea id="modalMessage" name="message" rows="3" placeholder="Tell us briefly about your business goals or specific questions..."></textarea>
                         </div>
                     </div>
 
                     <!-- Submit Button Row -->
                     <div class="modal-form-actions">
-                        <button type="submit" id="modalSubmitBtn" class="btn btn-primary btn-lg btn-full">
-                            <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Submit Request & Send WhatsApp Notification</span>
-                            <span class="btn-spinner hidden"><i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...</span>
+                        <button type="submit" id="modalSubmitBtn" class="btn btn-primary btn-lg btn-full" aria-label="Submit Form and Send WhatsApp Notification">
+                            <span class="btn-text"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Submit Request & Send WhatsApp Notification</span>
+                            <span class="btn-spinner hidden"><i class="fa-solid fa-circle-notch fa-spin" aria-hidden="true"></i> Submitting...</span>
                         </button>
                     </div>
 
                     <!-- Form Status Alert Box -->
-                    <div id="modalFormStatus" class="form-status-alert hidden"></div>
+                    <div id="modalFormStatus" class="form-status-alert hidden" role="status" aria-live="polite"></div>
                 </form>
 
                 <!-- Modal Footer Contact Info -->
                 <div class="modal-footer-info">
-                    <span><i class="fa-solid fa-phone text-primary"></i> Direct Call: <strong>7551067843</strong></span>
-                    <span><i class="fa-brands fa-whatsapp text-success"></i> WhatsApp: <strong>7551067843</strong></span>
+                    <span><i class="fa-solid fa-phone text-primary" aria-hidden="true"></i> Direct Call: <strong>7551067843</strong></span>
+                    <span><i class="fa-brands fa-whatsapp text-success" aria-hidden="true"></i> WhatsApp: <strong>7551067843</strong></span>
                 </div>
 
             </div>
@@ -1615,12 +1633,12 @@
     </div>
 
     <!-- FLOATING WHATSAPP BUTTON -->
-    <a href="https://wa.me/917551067843?text=Hello+DDL+Group%2C+I+want+to+know+more+about+your+services." class="whatsapp-float-btn" target="_blank" aria-label="Chat with DDL Group on WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://wa.me/917551067843?text=Hello+DDL+Group%2C+I+want+to+know+more+about+your+services." class="whatsapp-float-btn" target="_blank" rel="noopener" aria-label="Chat with DDL Group on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
         <span class="float-tooltip">Chat on WhatsApp</span>
     </a>
 
-    <!-- CUSTOM JAVASCRIPT -->
-    <script src="script.js"></script>
+    <!-- DEFERRED JAVASCRIPT (Non-blocking) -->
+    <script src="script.js" defer></script>
 </body>
 </html>
