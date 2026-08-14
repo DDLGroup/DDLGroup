@@ -403,4 +403,34 @@ document.addEventListener('DOMContentLoaded', () => {
         return { success: true };
     }
 
+
+    // --- 5. FAQ ACCORDION INTERACTIVITY ---
+    const faqItems = document.querySelectorAll('.faq-accordion-item');
+    faqItems.forEach(item => {
+        const questionBtn = item.querySelector('.faq-question-btn');
+        if (questionBtn) {
+            questionBtn.addEventListener('click', () => {
+                const isOpen = item.classList.contains('active');
+                
+                // Close other items for neat accordion behavior
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        const otherBtn = otherItem.querySelector('.faq-question-btn');
+                        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                if (isOpen) {
+                    item.classList.remove('active');
+                    questionBtn.setAttribute('aria-expanded', 'false');
+                } else {
+                    item.classList.add('active');
+                    questionBtn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        }
+    });
+
 });
+
