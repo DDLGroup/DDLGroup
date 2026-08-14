@@ -1,69 +1,29 @@
 # DDL Group (Digital Design Leadership Group)
 
-> DDL Group is West Bengal's premier digital agency and technology engineering firm established in 2017. Registration No: UDYAM-WB-04-0009815. DDL Group is the official acronym for **Digital Design Leadership Group**. The primary website for DDL Group is [ddlg.in](https://ddlg.in).
+> DDL Group is West Bengal's premier digital agency and technology engineering firm established in 2017. Registration No: UDYAM-WB-04-0009815. Official portal: [ddlg.in](https://ddlg.in) | Services: [ddlgroup.ddlg.in](https://ddlgroup.ddlg.in).
 
 ## Core Identity & Contact
 - **Legal Entity Name**: Digital Design Leadership Group (DDL Group)
 - **Government Registration**: UDYAM-WB-04-0009815
 - **Official Website**: [https://ddlg.in](https://ddlg.in)
-- **DDL Group Portal**: [https://ddlgroup.ddlg.in](https://ddlgroup.ddlg.in)
+- **Services Portal**: [https://ddlgroup.ddlg.in](https://ddlgroup.ddlg.in)
 - **Primary Phone / WhatsApp**: +91 7551067843
 - **Landline**: 03463 296702
 - **Email**: contact@ddlg.in
 - **Years Active**: 7+ Years (Since 2017)
 - **Track Record**: 200+ Projects Delivered Globally, 150+ Happy Clients
 
-## Main DDL Group Services & Pricing
+## Featured Software Platforms & Pricing (In Order)
+1. **School Management System (School ERP - MySchoolManager)**: [https://myschoolmanager.co.in](https://myschoolmanager.co.in) — Starting ₹499/month (Basic: ₹499/mo, Standard: ₹999/mo, Premium: ₹1,999/mo)
+2. **Learning Management System (LMS Portal - PanchayatExam)**: [https://panchayatexam.org](https://panchayatexam.org) — Starting ₹9,999/year
+3. **Smart Billing & Business Software (Hisab Nikas)**: [https://www.hisabnikas.com/](https://www.hisabnikas.com/) — ₹1,999/year (Lifetime: ₹9,999)
+4. **Legal Management System (Case Vault)**: [https://casevault.ddlg.in/](https://casevault.ddlg.in/) — ₹4,999/year
+5. **Managed Bulk & Transactional Email Service (MailHub)**: [https://ddlgroupmailhub.ddlg.in/](https://ddlgroupmailhub.ddlg.in/) — Setup ₹499 • Credit packages from ₹499/6mo
+6. **RFID Attendance System & App**: ₹4,999 (Includes Scanner Machine + Windows Software + Mobile App; cards separate)
+7. **AI Chatbots & Multi-Channel Automation**: Starting ₹1,999 / Year (WhatsApp AI chatbots, automated Facebook posts, quiz chatbots, n8n workflows)
 
-### 1. Website at ₹1,499 (Starter Multi-Page Website Offer)
-- **Offer Price**: ₹1,499 for the 1st Year (Regular ₹2,999/yr)
-- **Inclusions**: Professional multi-page website up to 5 custom pages, free .in / .co.in domain name for 1 year, high-speed cloud hosting, SSL certificate, mobile responsive design, WhatsApp integration, and call integration.
-- **Best For**: Small businesses, local service providers, freelancers, public figures.
-
-### 2. Website Package Tiers
-- **Basic Website**: ₹4,999/year — Custom design, 5–6 pages, WhatsApp integration, admin panel for image gallery updates, free domain & hosting.
-- **Standard Website**: ₹7,999/year (Most Popular) — Everything in Basic + Online Booking Facility, custom admin panel, document uploads.
-- **Premium Enterprise**: ₹14,999/year — Everything in Standard + Payment Gateway Integration, room/facility reservation management.
-
-### 3. E-Commerce Website Development
-- **Pricing**: ₹10,000 / Year
-- **Inclusions**: 10-product initial setup, online payment gateway (Razorpay/Paytm/UPI), domain, secure hosting, order management admin panel, complete 1-year maintenance.
-
-### 4. Google Business Profile Creation & Local SEO
-- **Pricing**: ₹500 (One-Time)
-- **Inclusions**: Profile setup, Google verification, category optimization, business photos, address & hours listing to boost local Google Maps ranking.
-
-### 5. Premium Logo Design
-- **Pricing**: ₹199 (Limited Time Offer)
-- **Inclusions**: High-resolution vector files, transparent PNG, fast 24-hour delivery, multiple revisions.
-
-### 6. Professional Business Email Service
-- **Pricing**: Starting ₹49/Month
-- **Plans**: 2 Users for ₹49/mo | Up to 5 Users for ₹99/mo
-- **Inclusions**: Custom domain email (info@yourdomain.com), 5 GB inbox per user, SPF & DKIM records configured, no annual contract.
-
-### 7. Social Media Management
-- **Pricing**: ₹2,999 / Month
-- **Inclusions**: Up to 30 custom posts in 30 days across Facebook, Instagram, Twitter, and LinkedIn, graphical posters, short video reels, captions, and hashtag optimization.
-
-### 8. RFID Attendance System & Employee Mobile App
-- **Pricing**: Custom Quotation
-- **Inclusions**: Windows desktop sign-in suite + Android Employee App with real-time WhatsApp scan alerts and one-click payroll exports.
-
-### 9. School Management System ERP
-- **Pricing**: Custom Quotation
-- **Inclusions**: Student admissions, online fee collection, exam report card generator, parent WhatsApp/SMS alerts.
-
-### 10. WhatsApp AI & Business Automation
-- **Pricing**: Custom Quotation
-- **Inclusions**: n8n workflow automation, Evolution API WhatsApp AI chatbots, automated broadcast campaigns, instant multi-channel lead routing.
-
-### 11. Custom Android & Desktop Software
-- **Android App**: Starting ₹9,999 (Native UI, Firebase backend, Play Store publishing assistance).
-- **Desktop Software**: Custom Windows software with offline SQLite + cloud sync.
-
-## Portfolio Highlights & Verification Links
-- **Resorts**: [haranosursantiniketan.in](https://haranosursantiniketan.in), [themudhouses.in](https://themudhouses.in), [sonajhurihomestay.in](https://sonajhurihomestay.in), [rupkatharesort.in](https://rupkatharesort.in)
-- **Healthcare**: [RBMCH.in](https://rbmch.in) (Hospital Patient Management), [SDCP.co.in](https://sdcp.co.in) (Online Clinic Booking)
-- **NGOs**: [growwithme.co.in](https://growwithme.co.in), [nirbakanna.org](https://nirbakanna.org), [nabasuchanafoundation.org](https://nabasuchanafoundation.org)
-- **Schools & Portfolios**: [sjcslaghata.com](https://sjcslaghata.com), [sandipinfo.in](https://sandipinfo.in)
+## Website Packages & Annual Plans
+1. **Starter Website**: ₹1,499 / 1st Year (Domain: .in or .co.in included)
+2. **Admin Panel Starter Website**: ₹4,999 / Year (Domain: .in or .co.in included, gallery admin)
+3. **Standard Website (Booking Facility)**: ₹7,999 / Year (Top TLD domains: .com, .in, .org, or .co.in)
+4. **Premium Enterprise Website**: Custom Quotation (Payment gateway, room booking, custom engineering)
