@@ -5,7 +5,7 @@
 User-agent: *
 Allow: /
 
-# Search Engine Crawlers
+# Standard Search Engine Crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -27,7 +27,7 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# AI & LLM Search Engine Crawlers
+# AI Crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -43,6 +43,5 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Sitemaps & Machine-Readable Context
+# Sitemap
 Sitemap: https://ddlgroup.ddlg.in/sitemap.xml
-LLMS-Txt: https://ddlgroup.ddlg.in/llms.txt
